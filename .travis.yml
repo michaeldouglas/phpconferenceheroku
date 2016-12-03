@@ -7,4 +7,11 @@ before_script:
   - travis_retry composer self-update
   - travis_retry composer install --prefer-source --no-interaction
 
+deploy:
+  provider: heroku
+  api_key:
+    secure: "SECUREKEY_BROWN_KEY"
+  app: phpconference
+  on: master
+
 script: bin/phpunit

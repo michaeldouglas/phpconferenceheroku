@@ -4,7 +4,6 @@ php:
 before_script:
 - travis_retry composer self-update
 - travis_retry composer install --prefer-source --no-interaction
-- travis_retry npm install
 - travis_retry npm install --dev
 deploy:
   provider: heroku

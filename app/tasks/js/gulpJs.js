@@ -5,6 +5,6 @@ module.exports = function (gulp, plugins) {
             .pipe(plugins.concat('app.min.js'))
             .pipe(plugins.uglify())
             .pipe(plugins.sourcemaps.write())
-            .pipe(gulp.dest('./assets/js'));
+            .pipe(gulp.dest('./public/assets/js'));
     };
 };

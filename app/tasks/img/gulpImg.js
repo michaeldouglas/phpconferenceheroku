@@ -7,6 +7,6 @@ module.exports = function (gulp, plugins) {
                 svgoPlugins: [{removeViewBonx: false}],
                 use: [plugins.pngquant()]
             }))
-            .pipe(gulp.dest('./assets/imgs'));
+            .pipe(gulp.dest('./public/assets/imgs'));
     };
 };

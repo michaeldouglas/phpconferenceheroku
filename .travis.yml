@@ -12,5 +12,3 @@ deploy:
   app: phpconference
   skip_cleanup: true
 script: bin/phpunit
-script: gulp js
-script: gulp sass

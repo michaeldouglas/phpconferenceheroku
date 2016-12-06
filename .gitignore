@@ -7,4 +7,3 @@ composer.lock
 .idea
 coverage/
 node_modules/
-assets/

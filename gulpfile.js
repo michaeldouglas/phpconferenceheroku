@@ -9,7 +9,7 @@ gulp.task('sass', tasks.getTask('sass', 'Sass'));
 
 
 // Tarefa default
-gulp.task('default', ['sass', 'js', 'img'], () => {
+gulp.task('default', ['sass', 'js', 'img'], function () {
 	gulp.watch(tasks.basePaths.sass, ['sass']);
     gulp.watch(tasks.basePaths.js, ['js']);
     gulp.watch(tasks.basePaths.img, ['img']);

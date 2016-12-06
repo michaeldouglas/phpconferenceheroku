@@ -4,6 +4,8 @@ php:
 before_script:
   - travis_retry composer self-update
   - travis_retry composer install --prefer-source --no-interaction
+  - npm install -g gulp
+  - npm install --save-dev gulp
 deploy:
   provider: heroku
   api_key:
@@ -11,5 +13,4 @@ deploy:
   app: phpconference
   skip_cleanup: true
 script: bin/phpunit
-script: npm install -g gulp
 script: gulp
